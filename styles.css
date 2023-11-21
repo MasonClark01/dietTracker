@@ -1,3 +1,123 @@
 *{
     margin: 0;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 900px;
+    background-color: #b5e550;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header>h1{
+    color: rgba(49, 49, 49, 0.74);
+}
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 65vh;
+    padding: 16px;
+}
+.contentBlock{
+    border: 4px solid #607c3c;
+    background-color: #ececa3;
+    height: 90%;
+    width: max(45%, 408px);
+    overflow: hidden;
+}
+#addFood{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+#addFood>h4{
+    padding-top: 8px;
+}
+.macrosDiv{
+    display: flex;
+    gap: 16px;
+}
+.macroContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.macros{
+    width: 64px;
+}
+#servingCount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#submitDiv{
+    display: flex;
+    gap: 8px;
+}
+#submitFood{
+    width: 120px;
+}
+#savedFoods{
+    width: 120px;
+}
+#saveFoodDiv{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+}
+#macroBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.gridSquare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 128px;
+    width: 128px;
+    border: solid 4px #b5e550;
+}
+#foodBlock{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: scroll;
+    justify-items: center;
+    border: 4px solid #607c3c;
+    width: 100%;
+    height: 90%;
+    gap: 16px;
+    
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: bottom;
+    margin-top: auto;
+    margin-bottom: 16px;
+    color: rgba(49, 49, 49, 0.74);
+    font-size: 16px;
+}
+#watermark>a{
+    text-decoration: none;
+    color: rgba(49, 49, 49, 0.74);
+    transition: .25s;
+}
+#watermark>a:hover{
+    font-size: 24px;
+    color: firebrick;
+    transition: .25s;
+}

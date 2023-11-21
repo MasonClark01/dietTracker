@@ -5,9 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="javaScript" href="javaScript.js">
-    <title>Diet tracker</title>
+    <title>Diet Tracker</title>
 </head>
 <body>
-    <script src="javaScript.js"></script>
+    <div id="header">
+        <h1>Diet Tracker</h1>
+    </div>
+    <div id="content">
+        <div id="addFood" class="contentBlock">
+            <h4>Add Food:</h4>
+            <div id="nameDiv">
+                <label for="nameInput">Name of Food:</label>
+                <input type="text" name="nameInput" id="nameInput" class="macros">
+            </div>
+            <p>Macros Per Serving:</p>
+            <div class="macrosDiv">
+                <div id="servingMacros">
+                    <div class="macroContainer">
+                        <label for="protein">Protein</label>
+                        <input type="number" name="protein" id="protein" class="macros" placeholder="Protein" min="0">
+                    </div>
+                    <div class="macroContainer">
+                        <label for="carbohydrates">Carbohydrates</label>
+                        <input type="number" name="carbohydrates" id="carbohydrates" class="macros" placeholder="Carbs" min="0">
+                    </div>
+                    <div class="macroContainer">
+                        <label for="fats">Fats</label>
+                        <input type="number" name="fats" id="fats" class="macros" placeholder="Fats" min="0">
+                    </div>
+                </div>
+                <div id="servingCount">
+                    <label for="servings">How Many Servings?</label>
+                    <input type="number" name="servings" id="servings" class="macros" min="1">
+                </div>
+            </div>
+            <div id="submitDiv">
+                <select name="savedFoods" id="savedFoods">
+                    <option value="workInProgress">WorkInProgress</option>
+                </select>
+                <button id="submitFood">Add Food</button>
+                <div id="saveFoodDiv">
+                    <label for="saveCheck">Save This Food?</label>
+                    <input type="checkbox" name="saveCheck" id="saveCheck">
+                </div>
+            </div>
+        </div>
+        <div id="macroBlock" class="contentBlock">
+            <div id="totalMacros">
+                <p id="macroTotal">Calories: 0 - Protein: 0 - Carbs: 0 - Fats: 0</p>
+            </div>
+            <div id="foodBlock"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <h3 id="watermark">Created By: <a href="https://github.com/MasonClark01" target="_blank">Mason Clark</a></h4>
+    </div>
+    <script async src="javaScript.js" ></script>
 </body>
 </html>
